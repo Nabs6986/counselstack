@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Check, X, Star, HelpCircle, ArrowRight, ExternalLink, Shield, Zap, DollarSign } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
+import { SaasWaitlist } from "@/components/marketing/SaasWaitlist";
 import { getSoftware, getAllSoftwareSlugs, SoftwareReview } from "../_data/software";
 import { getComparison, getAllComparisonSlugs } from "@/app/vs/_data/comparisons";
 
@@ -485,6 +486,14 @@ export default async function SoftwarePage({ params }: Props) {
             </a>
           </div>
         </section>
+        {/* SaaS Waitlist - Demand Validation */}
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <SaasWaitlist
+            niche="legal"
+            headline="None of these quite fit your practice?"
+            subheadline="We're building lightweight legal software for attorneys who don't need enterprise features. Get early access."
+          />
+        </div>
       </main>
 
       <Footer />
