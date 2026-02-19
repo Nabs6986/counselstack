@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://counselstack.com/sitemap.xml',
+    sitemap: 'https://counselstack.io/sitemap.xml',
   };
 }
