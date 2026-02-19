@@ -160,8 +160,18 @@ export default async function UseCasePage({ params }: Props) {
                       <span className="font-medium">Best for:</span> {solution.bestFor}
                     </p>
                   </div>
-                  <div className="text-right shrink-0">
+                  <div className="text-right shrink-0 flex flex-col items-end gap-2">
                     <span className="text-sm font-semibold text-slate-900">{solution.price}</span>
+                    {solution.affiliateUrl && (
+                      <a
+                        href={solution.affiliateUrl}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className="inline-flex items-center gap-1 rounded-lg bg-brand-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-brand-700 transition-colors"
+                      >
+                        Try Free →
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

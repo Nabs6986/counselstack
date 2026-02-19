@@ -1,14 +1,18 @@
+import { getAffiliateUrl } from "@/lib/affiliateConfig";
+
 export interface SoftwareComparison {
   slug: string;
   platformA: {
     name: string;
     price: string;
     bestFor: string;
+    affiliateUrl: string;
   };
   platformB: {
     name: string;
     price: string;
     bestFor: string;
+    affiliateUrl: string;
   };
   quickAnswer: string;
   features: {
@@ -38,11 +42,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "Firms needing extensive integrations",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "MyCase",
       price: "$39-$79/user/mo",
       bestFor: "Client-focused practices",
+      affiliateUrl: getAffiliateUrl("MyCase", "vs-comparison"),
     },
     quickAnswer: "Clio is the better choice for firms that need 200+ integrations and robust reporting. MyCase wins for practices prioritizing client communication with its built-in texting and superior client portal. Both start at $39/user/month.",
     features: [
@@ -119,11 +125,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "Firms needing integrations & reporting",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "PracticePanther",
       price: "$49-$89/user/mo",
       bestFor: "Automation-focused firms",
+      affiliateUrl: getAffiliateUrl("PracticePanther", "vs-comparison"),
     },
     quickAnswer: "Clio offers more integrations (200+) and is the industry standard with a longer track record. PracticePanther excels at workflow automation and has a more modern interface. Choose Clio for integrations; choose PracticePanther for automation.",
     features: [
@@ -200,11 +208,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "Firms needing integrations & flexibility",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "Smokeball",
       price: "$89-$179/user/mo",
       bestFor: "Maximizing billable hours",
+      affiliateUrl: getAffiliateUrl("Smokeball", "vs-comparison"),
     },
     quickAnswer: "Smokeball's automatic time tracking captures every billable minute without manual entry — firms report 20-30% more captured time. Clio offers more integrations and lower starting price. Choose Smokeball to maximize billables; choose Clio for flexibility and cost.",
     features: [
@@ -281,11 +291,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "MyCase",
       price: "$39-$109/user/mo",
       bestFor: "Client communication & legal AI",
+      affiliateUrl: getAffiliateUrl("MyCase", "vs-comparison"),
     },
     platformB: {
       name: "PracticePanther",
       price: "$49-$89/user/mo",
       bestFor: "Workflow automation on every plan",
+      affiliateUrl: getAffiliateUrl("PracticePanther", "vs-comparison"),
     },
     quickAnswer: "MyCase edges ahead for firms that want built-in legal AI, more billing flexibility, and a larger feature gap between tiers. PracticePanther wins for firms prioritizing workflow automation from day one — its task workflows are available on the lowest plan. PracticePanther also costs less to unlock 2-way texting ($89 Business vs MyCase's $89 Pro).",
     features: [
@@ -362,11 +374,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "General practice with broad integrations",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "Filevine",
       price: "Custom pricing (from ~$39/user/mo)",
       bestFor: "High-volume plaintiff & PI firms",
+      affiliateUrl: getAffiliateUrl("Filevine", "vs-comparison"),
     },
     quickAnswer: "Clio is the better choice for general practice firms, solos, and those who need transparent pricing and 200+ integrations. Filevine excels for plaintiff law, personal injury, and mass tort firms that handle high case volumes and need deeply customizable case workflows. Filevine's custom pricing model means it can scale, but you'll need to contact sales for a quote.",
     features: [
@@ -443,11 +457,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "Broad integrations & established ecosystem",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "Rocket Matter",
       price: "$49-$99/user/mo",
       bestFor: "Billing-first firms with built-in accounting",
+      affiliateUrl: getAffiliateUrl("Rocket Matter", "vs-comparison"),
     },
     quickAnswer: "Clio offers more integrations and a larger community, making it the safer default for most law firms. Rocket Matter stands out for its billing depth — multiple timers, LEDES billing, and a built-in business accounting module in its Elite tier that can replace QuickBooks entirely. If eliminating QuickBooks from your stack is a goal, Rocket Matter deserves a serious look.",
     features: [
@@ -525,11 +541,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "Flexible pricing & 200+ integrations",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "CosmoLex",
       price: "$89/user/mo (annual)",
       bestFor: "All-in-one with built-in legal accounting",
+      affiliateUrl: getAffiliateUrl("CosmoLex", "vs-comparison"),
     },
     quickAnswer: "CosmoLex is the rare legal practice management software that replaces QuickBooks entirely — it includes fully integrated legal accounting alongside trust accounting, time tracking, and billing in a single subscription. Clio is more flexible, cheaper to start, and has far more integrations. Choose CosmoLex if eliminating separate accounting software is a priority; choose Clio if you need flexibility and integrations.",
     features: [
@@ -606,11 +624,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "MyCase",
       price: "$39-$109/user/mo",
       bestFor: "Client communication & legal AI",
+      affiliateUrl: getAffiliateUrl("MyCase", "vs-comparison"),
     },
     platformB: {
       name: "Smokeball",
       price: "From $149/mo (firm-based pricing)",
       bestFor: "Document-intensive practices & auto time capture",
+      affiliateUrl: getAffiliateUrl("Smokeball", "vs-comparison"),
     },
     quickAnswer: "MyCase is more affordable and better for client communication, with built-in 2-way texting and legal AI (8am IQ). Smokeball wins for document-heavy practices — 8,000+ built-in legal forms, deep Microsoft 365 integration, and automatic time capture in its top tier. If you do estate planning, real estate, or family law with heavy document drafting, Smokeball's document library can be a game-changer.",
     features: [
@@ -688,11 +708,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "PracticePanther",
       price: "$49-$89/user/mo",
       bestFor: "Workflow automation at every tier",
+      affiliateUrl: getAffiliateUrl("PracticePanther", "vs-comparison"),
     },
     platformB: {
       name: "Smokeball",
       price: "From $149/mo (firm-based pricing)",
       bestFor: "Document-heavy practices with Microsoft Office integration",
+      affiliateUrl: getAffiliateUrl("Smokeball", "vs-comparison"),
     },
     quickAnswer: "PracticePanther offers more predictable per-user pricing and strong workflow automation on all plans. Smokeball is purpose-built for document-intensive practices with its 8,000+ legal forms, deep Microsoft Word/Outlook integration, and automatic time tracking in the Prosper+ plan. For most general-practice firms, PracticePanther is more cost-effective; for document-heavy niche practices, Smokeball's specialized tools pay for themselves.",
     features: [
@@ -770,11 +792,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Filevine",
       price: "Custom pricing (from ~$39/user/mo)",
       bestFor: "Mid-size plaintiff firms with flexible workflows",
+      affiliateUrl: getAffiliateUrl("Filevine", "vs-comparison"),
     },
     platformB: {
       name: "Litify",
       price: "Custom enterprise pricing",
       bestFor: "Large law firms needing Salesforce-grade analytics",
+      affiliateUrl: "https://www.litify.com/",
     },
     quickAnswer: "Both Filevine and Litify target plaintiff-side and high-volume litigation firms, but they serve different firm sizes. Filevine is the go-to for mid-size plaintiff firms (5-100 attorneys) that need flexible, customizable case management without Salesforce complexity. Litify is purpose-built for large-scale operations (50+ users) that want enterprise-grade analytics, Salesforce's security infrastructure, and scalability for thousands of cases.",
     features: [
@@ -849,11 +873,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "Clio",
       price: "$39-$129/user/mo",
       bestFor: "Full practice management with integrated payments",
+      affiliateUrl: getAffiliateUrl("Clio", "vs-comparison"),
     },
     platformB: {
       name: "LawPay",
       price: "Classic $19/mo flat; Pro from ~$29/user/mo + processing fees",
       bestFor: "Specialized legal payment processing & compliance",
+      affiliateUrl: "https://www.lawpay.com/",
     },
     quickAnswer: "This comparison is often misunderstood — Clio is a full practice management platform while LawPay is primarily a legal payment processor (though LawPay Pro adds practice management features). Most firms use LawPay *with* Clio via integration, not instead of it. If you need practice management AND payments, Clio with Clio Payments is the more integrated choice. If you only need payment processing or want superior payment-specific features, LawPay as a standalone tool (or integrated with another system) is excellent.",
     features: [
@@ -930,11 +956,13 @@ export const comparisons: Record<string, SoftwareComparison> = {
       name: "MyCase",
       price: "$39-$109/user/mo",
       bestFor: "Client communication, legal AI & lower entry price",
+      affiliateUrl: getAffiliateUrl("MyCase", "vs-comparison"),
     },
     platformB: {
       name: "Rocket Matter",
       price: "$49-$99/user/mo",
       bestFor: "Billing-intensive practices with multiple timers",
+      affiliateUrl: getAffiliateUrl("Rocket Matter", "vs-comparison"),
     },
     quickAnswer: "MyCase and Rocket Matter are similarly priced competitors, but they have distinct strengths. MyCase offers legal AI (8am IQ), built-in 2-way texting at its $89 Pro tier, and a $10/month lower entry price. Rocket Matter is the stronger choice for billing-heavy firms — multiple simultaneous timers, built-in law office accounting in its Premier plan, and Stevie Award-winning customer support. Choose MyCase for client communication; choose Rocket Matter for billing depth.",
     features: [

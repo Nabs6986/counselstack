@@ -1,3 +1,5 @@
+import { getAffiliateUrl } from "@/lib/affiliateConfig";
+
 export interface PricingTier {
   tier: string;
   price: string;
@@ -16,6 +18,7 @@ export interface SoftwareReview {
   ratingCount: number;
   founded: string;
   website: string;
+  affiliateUrl: string;
   quickVerdict: string;
   priceRange: string;
   bestFor: string;
@@ -47,6 +50,7 @@ export const softwareReviews: Record<string, SoftwareReview> = {
     ratingCount: 1580,
     founded: "2008",
     website: "https://www.clio.com",
+    affiliateUrl: getAffiliateUrl("Clio", "software-review"),
     quickVerdict:
       "Clio is the industry's gold standard for legal practice management, trusted by 150,000+ legal professionals worldwide. With 200+ integrations, robust reporting, and a mature feature set covering everything from time tracking to client intake, it's the best all-around choice for small to mid-size firms — though its higher tiers can get pricey.",
     priceRange: "$49–$139/user/mo",
@@ -242,6 +246,7 @@ export const softwareReviews: Record<string, SoftwareReview> = {
     ratingCount: 940,
     founded: "2010",
     website: "https://www.mycase.com",
+    affiliateUrl: getAffiliateUrl("MyCase", "software-review"),
     quickVerdict:
       "MyCase is the best legal practice management software for firms that put client communication first. Its built-in two-way texting, superior client portal, and all-in-one pricing make it a compelling alternative to Clio — especially for small and mid-size firms that want seamless client engagement without a patchwork of integrations.",
     priceRange: "$39–$109/user/mo",
@@ -424,6 +429,7 @@ export const softwareReviews: Record<string, SoftwareReview> = {
     ratingCount: 670,
     founded: "2012",
     website: "https://www.practicepanther.com",
+    affiliateUrl: getAffiliateUrl("PracticePanther", "software-review"),
     quickVerdict:
       "PracticePanther is the automation champion of legal practice management software. With task & event workflows available on all plans, native two-way texting, built-in eSignature, and a modern interface, it's an excellent choice for efficiency-focused firms that want powerful features without paying premium prices.",
     priceRange: "$49–$89/user/mo",
@@ -618,6 +624,7 @@ export const softwareReviews: Record<string, SoftwareReview> = {
     ratingCount: 520,
     founded: "2012",
     website: "https://www.smokeball.com",
+    affiliateUrl: getAffiliateUrl("Smokeball", "software-review"),
     quickVerdict:
       "Smokeball's automatic time tracking (Activity Intelligence) is unmatched — it captures every minute you spend on emails, documents, and phone calls without a single timer. Firms report recovering 20–30% more billable time after switching. Combine that with 8,000+ automated legal forms and deep Microsoft 365 integration, and Smokeball is the clear choice for firms obsessed with maximizing billable hours.",
     priceRange: "$49–$179+/user/mo",
@@ -811,6 +818,7 @@ export const softwareReviews: Record<string, SoftwareReview> = {
     ratingCount: 380,
     founded: "2015",
     website: "https://www.filevine.com",
+    affiliateUrl: getAffiliateUrl("Filevine", "software-review"),
     quickVerdict:
       "Filevine is the most customizable legal case management platform on the market, purpose-built for personal injury, mass tort, and high-volume litigation firms. Its AI-powered document analysis, granular workflow automation, and deep customizability make it a powerhouse for large practices — though the complexity and custom pricing model make it better suited for established firms than new or small ones.",
     priceRange: "Custom pricing (typically $50–$125/user/mo)",
@@ -990,6 +998,7 @@ export const softwareReviews: Record<string, SoftwareReview> = {
     ratingCount: 310,
     founded: "2008",
     website: "https://www.rocketmatter.com",
+    affiliateUrl: getAffiliateUrl("Rocket Matter", "software-review"),
     quickVerdict:
       "Rocket Matter is a solid, productivity-focused legal practice management software that punches above its weight class. Known for exceptional customer support (Stevie Award winner since 2015), built-in project management, and strong billing capabilities, it's a reliable choice for small to mid-size firms looking for dependable software without the complexity of enterprise-grade platforms.",
     priceRange: "$49–$129/user/mo",

@@ -1,3 +1,5 @@
+import { getAffiliateUrl } from "@/lib/affiliateConfig";
+
 export interface SoftwareRecommendation {
   rank: number;
   name: string;
@@ -57,7 +59,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio's EasyStart plan at $39/user/month gives solo attorneys a professional-grade platform without overcommitting. The $39 tier covers time tracking, basic billing, and matter management. When you're ready for trust accounting and a client portal, Essentials at $79/mo is still reasonable for a solo practice.",
         pros: ["200+ integrations", "Industry-standard reputation", "Strong mobile app", "Scales as you grow", "Large user community"],
         cons: ["Advanced features require higher tiers", "Can feel complex for simple practices"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -68,7 +70,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "MyCase is frequently recommended by solo attorneys for its intuitive interface and included client portal at every tier. The built-in two-way texting (Pro plan, $69/mo) eliminates the need for a separate messaging tool. For a solo practice where client relationships are everything, MyCase's communication features are hard to beat.",
         pros: ["Easy to set up and use", "Built-in client texting", "eSignature included on Pro", "Excellent client portal", "Flat pricing, no surprise add-ons"],
         cons: ["Fewer integrations than Clio (70+)", "Reporting is basic on entry tier"],
-        affiliateUrl: "https://www.mycase.com",
+        affiliateUrl: getAffiliateUrl("MyCase", "for-audience"),
       },
       {
         rank: 3,
@@ -79,7 +81,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "PracticePanther includes workflow automation and two-way texting on its Solo plan — features that Clio locks behind premium tiers. If you want to automate intake, follow-ups, and document generation from day one, PracticePanther delivers more out of the box for a solo practice.",
         pros: ["Automation on all plans", "Built-in two-way texting", "eSignature included", "Clean, modern interface", "Competitive pricing"],
         cons: ["Smaller integration library than Clio", "Less name recognition"],
-        affiliateUrl: "https://www.practicepanther.com",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -163,7 +165,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio's Essentials plan ($79/user/mo) is the sweet spot for small firms of 2-10 attorneys. It includes trust accounting, client portal, custom fields, and 200+ integrations. As you add attorneys, Clio scales gracefully — you won't need to switch platforms when you hit 15 or 20 people. The large Clio community also means easy hiring of staff who already know the system.",
         pros: ["200+ integrations with accounting, CRM, and legal tools", "Scales from 1 to 200+ attorneys", "Industry-standard training resources", "Strong trust accounting", "Active user community"],
         cons: ["Per-user pricing adds up", "Some features locked to higher tiers", "Can feel overwhelming at first"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -174,7 +176,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "MyCase's Pro plan ($69/user/mo) hits the sweet spot for small firms wanting all-in-one functionality without complexity. Built-in client texting, eSignature, and an excellent client portal reduce the need for additional software. Small firms consistently rate MyCase highest for ease of adoption — you'll have staff up and running in days, not weeks.",
         pros: ["Best-in-class client portal", "Built-in two-way texting", "eSignature on all paid plans", "Intuitive interface reduces training time", "Flat pricing without add-ons"],
         cons: ["Fewer integrations than Clio", "Reporting less powerful at lower tiers"],
-        affiliateUrl: "https://www.mycase.com",
+        affiliateUrl: getAffiliateUrl("MyCase", "for-audience"),
       },
       {
         rank: 3,
@@ -185,7 +187,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Smokeball's automatic time tracking is a game-changer for small firms billing hourly. Instead of manually starting and stopping timers, Smokeball captures every email, phone call, and document touched — automatically linking them to the right matter. Small firms report recovering 20-30% more billable time after switching. At $89/user/month, it often pays for itself quickly.",
         pros: ["Automatic time tracking captures all billables", "8,000+ built-in legal forms", "Deep Microsoft 365 integration", "Excellent document automation", "Productivity dashboards"],
         cons: ["Higher starting price ($89/user/mo)", "Fewer integrations than Clio", "Less ideal for non-hourly billing"],
-        affiliateUrl: "https://www.smokeball.com",
+        affiliateUrl: getAffiliateUrl("Smokeball", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -269,7 +271,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio's Advanced plan ($109/user/mo) or Complete ($129/user/mo) gives mid-size firms advanced reporting, workflow automation, custom permissions, and access to the 200+ integration ecosystem. Clio's scale means your platform investment is protected — you won't need to switch if you grow from 15 to 50 attorneys. Industry-standard reputation also makes it easier to hire staff who already know the system.",
         pros: ["200+ integrations covering every tool you use", "Advanced permissions for matter access control", "Sophisticated reporting and analytics", "Dedicated onboarding support", "Proven at 50+ attorney scale"],
         cons: ["Premium pricing at Advanced/Complete tiers", "Can require dedicated admin to configure optimally"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -280,7 +282,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Filevine targets mid-size to large firms handling complex, high-volume caseloads. It excels in personal injury, mass tort, family law, immigration, and criminal defense. The platform's project-based matter organization, custom task templates, and powerful document management make it a top choice for litigation-heavy firms. Custom pricing means you get features tailored to your practice.",
         pros: ["Highly customizable workflows per practice area", "Excellent document management at scale", "Strong reporting and analytics", "Purpose-built for litigation teams", "Task management designed for complex cases"],
         cons: ["Custom pricing (less transparent)", "Steeper learning curve", "Implementation takes longer"],
-        affiliateUrl: "https://www.filevine.com",
+        affiliateUrl: getAffiliateUrl("Filevine", "for-audience"),
       },
       {
         rank: 3,
@@ -291,7 +293,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Actionstep is built for mid-size firms with diverse practice areas that need different workflows for different matter types. Its process engine allows granular customization of every step of your practice — from intake to matter close. Robust accounting integration (it has built-in accounting, not just integration) makes it a strong choice for firms wanting a true all-in-one platform.",
         pros: ["Built-in accounting (not just integration)", "Highly customizable process engine", "Strong multi-practice area support", "Powerful document automation", "Good reporting suite"],
         cons: ["Significant configuration investment upfront", "Higher cost than some alternatives", "Less intuitive UI for non-technical staff"],
-        affiliateUrl: "https://www.actionstep.com",
+        affiliateUrl: getAffiliateUrl("Actionstep", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -375,7 +377,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Filevine is purpose-built for personal injury and contingency fee practices. It tracks settlements, medical treatment timelines, lien management (medical providers, Medicare, Medicaid), and fee calculations automatically. The platform's document management handles medical record organization at scale, and its reporting tools show case status and expected settlement values across your entire portfolio.",
         pros: ["Native contingency fee tracking", "Medical records management", "Lien tracking (medical, Medicare, Medicaid)", "Settlement workup tools", "Mass tort case management", "High-volume case intake automation"],
         cons: ["Custom pricing (less transparent)", "Longer implementation timeline", "Complex initial configuration"],
-        affiliateUrl: "https://www.filevine.com",
+        affiliateUrl: getAffiliateUrl("Filevine", "for-audience"),
       },
       {
         rank: 2,
@@ -386,7 +388,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "SmartAdvocate is built from the ground up for personal injury firms. Every feature exists for PI: medical treatment tracking, provider and lien management, insurance information tracking, demand letter automation, and settlement pipeline reports. If PI is your only practice area, SmartAdvocate's specialization gives it an edge over general platforms.",
         pros: ["Designed exclusively for personal injury", "Medical treatment tracking per case", "Comprehensive lien management", "Built-in demand letter templates", "Insurance tracker", "Statute of limitations alerts"],
         cons: ["PI-only (not suitable for multi-practice firms)", "Custom pricing", "Less flexible for non-PI matters"],
-        affiliateUrl: "https://www.smartadvocate.com",
+        affiliateUrl: getAffiliateUrl("SmartAdvocate", "for-audience"),
       },
       {
         rank: 3,
@@ -397,7 +399,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "MyCase doesn't have PI-specific features like SmartAdvocate, but its excellent client portal, built-in texting, and document management work well for PI practices. Clients can track their case progress and communicate with your team 24/7, reducing the constant 'what's happening with my case' calls that PI firms know well. At $69/user/month, it's the most affordable full-featured option.",
         pros: ["Transparent pricing ($69/mo)", "Best client communication tools", "Easy client portal", "Good document management", "Built-in two-way texting"],
         cons: ["No native contingency fee calculator", "No specialized lien tracking", "Less PI-specific than Filevine or SmartAdvocate"],
-        affiliateUrl: "https://www.mycase.com",
+        affiliateUrl: getAffiliateUrl("MyCase", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -481,7 +483,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio Essentials ($79/user/mo) handles the full family law workflow: matter management for divorce, custody, and support cases, document storage and automation, court deadline calendaring, trust accounting for retainers, and a client portal that keeps clients updated without constant calls. Clio's extensive template library for family law documents (petitions, agreements, parenting plans) saves hours per case.",
         pros: ["Extensive family law document templates", "Strong court deadline tracking", "Excellent client portal reduces client calls", "Trust accounting for retainers", "200+ integrations", "Family law practice area setup guides"],
         cons: ["No specialized co-parenting or custody scheduling tools", "Per-user pricing"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -492,7 +494,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Family law clients are often anxious and frequently contact their attorneys. MyCase's built-in texting, email, and client portal dramatically reduce 'what's happening?' calls. Clients can see case status, review and sign documents, and communicate directly through the portal — at any hour. The secure two-way messaging is particularly valuable for sensitive family law communications.",
         pros: ["Best-in-class client portal reduces client anxiety", "Built-in two-way texting", "Secure document sharing", "eSignature for agreements", "Easy to explain to non-tech-savvy clients", "Flat pricing with no surprises"],
         cons: ["Less document automation than specialized tools", "Reporting less robust at base tier"],
-        affiliateUrl: "https://www.mycase.com",
+        affiliateUrl: getAffiliateUrl("MyCase", "for-audience"),
       },
       {
         rank: 3,
@@ -503,7 +505,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Smokeball's library of 8,000+ legal forms includes state-specific family law forms — divorce petitions, custody motions, support calculations. Document automation lets you generate complex pleadings from client data in minutes. Automatic time tracking captures all the client communication time that family law generates (emails, calls, portal messages), often recovering 20-30% more billable time.",
         pros: ["8,000+ forms including state family law forms", "Document automation for complex pleadings", "Automatic time tracking catches all billables", "Strong Microsoft 365 integration", "Productivity dashboards per attorney"],
         cons: ["Higher price point ($119/mo for document automation)", "Less strong client portal vs. MyCase"],
-        affiliateUrl: "https://www.smokeball.com",
+        affiliateUrl: getAffiliateUrl("Smokeball", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -587,7 +589,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio Essentials handles the criminal defense workflow effectively: court date calendaring with deadline rules, client portal for communication when clients are out of custody, document storage for discovery and evidence, and flexible billing (flat fee, hourly, or hybrid). Its integration with court e-filing systems in many jurisdictions saves significant time on routine filings.",
         pros: ["Court deadline management with rules", "Client portal for ongoing communication", "Supports flat fee and hourly billing", "e-Filing integrations in many jurisdictions", "Strong mobile app for in-court access", "Conflict checking for new matters"],
         cons: ["No specialized evidence management", "No public defender billing module"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -598,7 +600,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Criminal defense clients — and their families — demand constant updates. MyCase's built-in texting, secure messaging, and client portal handle this communication efficiently without consuming attorney time. The flat-rate pricing model is also friendly for criminal defense firms that mix flat-fee and hourly billing without complex per-feature pricing.",
         pros: ["Built-in two-way texting for client updates", "Easy client portal for status updates", "Good for flat-fee billing tracking", "eSignature for plea agreements and retainers", "Affordable pricing ($69/mo Pro)"],
         cons: ["No specialized criminal case type tracking", "Limited court-specific deadline rules"],
-        affiliateUrl: "https://www.mycase.com",
+        affiliateUrl: getAffiliateUrl("MyCase", "for-audience"),
       },
       {
         rank: 3,
@@ -609,7 +611,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "PracticePanther's automation tools shine for criminal defense intake: when a new client calls, automated workflows trigger retainer agreements, intake questionnaires, conflict checks, and court date entry. Strong flat-fee billing management makes it easy to track payments against flat-fee criminal defense retainers. At $49/user/month, it's the most affordable option with automation included.",
         pros: ["Automation from first plan (intake, follow-ups)", "Flat-fee billing tracking", "Built-in conflict checking", "Two-way texting included", "Competitive pricing ($49/mo)"],
         cons: ["Smaller integrations library", "Less established than Clio"],
-        affiliateUrl: "https://www.practicepanther.com",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -693,7 +695,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Docketwise is built exclusively for immigration law. It includes hundreds of USCIS and Department of Labor forms that auto-populate from client questionnaires, immigration-specific case types (family-based, employment-based, naturalization, asylum, DACA), visa bulletin tracking, and deadline management tuned to immigration timelines. If immigration is your primary or only practice area, Docketwise's specialization is unmatched.",
         pros: ["Hundreds of USCIS forms with auto-population", "Immigration-specific case types and timelines", "Visa bulletin tracking", "Client questionnaire automation", "Built-in client portal in multiple languages", "I-94 and visa status tracking"],
         cons: ["Immigration-focused only (not for multi-practice firms)", "Less robust general practice management features", "Smaller integration library"],
-        affiliateUrl: "https://www.docketwise.com",
+        affiliateUrl: getAffiliateUrl("Docketwise", "for-audience"),
       },
       {
         rank: 2,
@@ -704,7 +706,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "INSZoom is a comprehensive immigration-specific platform built for complex, high-volume immigration practices. It excels for corporate immigration (H-1B, L-1, TN), high-volume family immigration, and removal defense practices. The platform handles employer compliance, PERM tracking, LCA management, and generates filing reports for corporate clients. A strong choice for firms with corporate immigration clients.",
         pros: ["Comprehensive corporate immigration workflows", "PERM and LCA tracking", "Employer compliance monitoring", "Strong reporting for corporate clients", "Foreign national tracking", "Large forms library"],
         cons: ["Custom pricing", "Complex initial setup", "Overkill for small family-based immigration practices"],
-        affiliateUrl: "https://www.inszoom.com",
+        affiliateUrl: getAffiliateUrl("INSZoom", "for-audience"),
       },
       {
         rank: 3,
@@ -715,7 +717,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio doesn't have native USCIS form automation, but its flexibility and integration library make it workable for immigration practices with moderate form volumes. Immigration attorneys who also handle other practice areas (family law, criminal defense for immigrant clients) benefit from Clio's all-in-one platform. Custom fields can track visa types, expiration dates, and case status.",
         pros: ["Works across multiple practice areas", "200+ integrations (can integrate with form tools)", "Strong client portal and communication", "Good deadline tracking with custom fields", "Active immigration attorney user community"],
         cons: ["No native USCIS form automation", "Requires custom configuration for immigration-specific tracking", "Less efficient for high-volume form-heavy practices"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -799,7 +801,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio's combination of document automation, client portal, and CRM features works extremely well for estate planning. The document automation (through Clio Draft or integrated tools) generates coordinated estate plan documents from client intake data. Clio Grow's CRM features help manage long-term client relationships across decades — important when clients update their plans or return for probate matters. Trust accounting handles retainer management and flat fees cleanly.",
         pros: ["Strong document automation for estate plans", "CRM features for long-term client relationships", "Trust accounting for retainers and flat fees", "Client portal for document review and signing", "200+ integrations", "Good probate matter tracking"],
         cons: ["Not estate-planning-specific", "Document automation requires some configuration"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -810,7 +812,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Smokeball's document automation is the strongest in the industry for estate planning. Generate a complete estate plan package — will, trust, pour-over will, healthcare directive, power of attorney — from a single set of client data. The 8,000+ forms library includes state-specific estate planning forms. Automatic time tracking also captures all the time spent on document preparation and client communication.",
         pros: ["Best document automation for estate plan packages", "State-specific estate planning forms library", "Automatic time tracking", "Deep Microsoft 365 integration", "Excellent for high-document-volume practices"],
         cons: ["Higher price ($119/mo for document automation)", "Less strong CRM for long-term client relationships", "Client portal less polished than MyCase"],
-        affiliateUrl: "https://www.smokeball.com",
+        affiliateUrl: getAffiliateUrl("Smokeball", "for-audience"),
       },
       {
         rank: 3,
@@ -821,7 +823,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "WealthCounsel is designed specifically for estate planning and elder law attorneys. Its document drafting system generates sophisticated estate planning documents (trusts, wills, business succession plans) with interview-driven data collection. While it's primarily a drafting tool rather than a full practice management platform, many estate planning attorneys use WealthCounsel for drafting alongside Clio for matter management.",
         pros: ["Most comprehensive estate planning document library", "Interview-driven document generation", "State-specific compliance updates", "Specialized for sophisticated estate plans", "Strong trust and entity formation documents"],
         cons: ["Drafting tool, not full practice management", "Needs companion practice management software", "Higher cost than general platforms"],
-        affiliateUrl: "https://www.wealthcounsel.com",
+        affiliateUrl: getAffiliateUrl("WealthCounsel", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -905,7 +907,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Smokeball's deep document automation and forms library make it particularly strong for real estate practices. State-specific real estate forms (purchase agreements, deeds, HUD-1 alternatives, closing statements) are included in the 8,000+ form library. The integration with Microsoft Word means attorneys work in familiar tools while Smokeball handles matter management and document automation in the background.",
         pros: ["State-specific real estate forms library", "Best document automation for closings", "Automatic time tracking", "Microsoft 365 deep integration", "HUD/ALTA closing statement support", "Strong IOLTA trust accounting"],
         cons: ["Higher price ($119/mo for document features)", "Less client-portal focused than MyCase"],
-        affiliateUrl: "https://www.smokeball.com",
+        affiliateUrl: getAffiliateUrl("Smokeball", "for-audience"),
       },
       {
         rank: 2,
@@ -916,7 +918,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio handles real estate matters well, particularly commercial transactions where deal complexity exceeds a standard closing workflow. Custom fields track transaction-specific data (purchase price, financing terms, due diligence deadlines, title commitment status). Clio's integrations with accounting software keep track of closing funds properly. Multi-practice firms appreciate being able to handle real estate alongside corporate, litigation, or other matters in one platform.",
         pros: ["Flexible for complex commercial RE transactions", "200+ integrations including accounting", "Strong matter management for complex deals", "Scales across practice areas", "Solid IOLTA trust accounting"],
         cons: ["No native RE-specific forms library", "Requires configuration for RE-specific tracking"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 3,
@@ -927,7 +929,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Real estate clients want to know exactly where their closing stands. MyCase's client portal gives buyers and sellers real-time visibility into their transaction status, document requests, and outstanding items. Built-in texting simplifies communication around last-minute closing requirements. The platform handles standard residential closings effectively without the complexity — or price — of more specialized tools.",
         pros: ["Excellent client portal for closing status tracking", "Built-in texting for last-minute items", "eSignature for closing documents", "Easy to use for high-volume residential closings", "Transparent pricing ($69/mo)"],
         cons: ["No specialized RE transaction management features", "No native real estate forms library"],
-        affiliateUrl: "https://www.mycase.com",
+        affiliateUrl: getAffiliateUrl("MyCase", "for-audience"),
       },
     ],
     keyFeatures: [
@@ -1011,7 +1013,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Clio Advanced ($109/user/mo) handles corporate legal work effectively with sophisticated billing (UTBMS codes, billing guideline compliance, detailed narratives), matter management for complex transactions, and 200+ integrations with tools corporate attorneys use (DocuSign, Microsoft 365, accounting systems). Custom fields track corporate-specific data (entity type, transaction value, deal stage). The platform scales cleanly from a boutique practice to a large corporate law department.",
         pros: ["Sophisticated billing with UTBMS codes", "200+ integrations with corporate tools", "Advanced reporting and analytics", "Strong document management", "Scales across firm sizes", "Active corporate attorney user community"],
         cons: ["No native entity management", "Requires custom configuration for deal tracking", "Not purpose-built for corporate practice"],
-        affiliateUrl: "https://www.clio.com",
+        affiliateUrl: getAffiliateUrl("Clio", "for-audience"),
       },
       {
         rank: 2,
@@ -1022,7 +1024,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Actionstep is built for complexity — the exact environment where corporate legal work lives. Its built-in accounting (not just integration) handles sophisticated trust, billing, and financial management. The workflow engine creates transaction-specific processes (M&A due diligence, financing transactions, entity formation sequences). For firms doing significant deal-driven corporate work, Actionstep's customization depth is its key advantage.",
         pros: ["Built-in accounting for sophisticated financial management", "Highly customizable for deal-specific workflows", "Strong document management for transactions", "Good for multi-entity corporate matters", "Robust reporting for corporate clients"],
         cons: ["Custom pricing (less transparent)", "Significant configuration investment", "Steeper learning curve"],
-        affiliateUrl: "https://www.actionstep.com",
+        affiliateUrl: getAffiliateUrl("Actionstep", "for-audience"),
       },
       {
         rank: 3,
@@ -1033,7 +1035,7 @@ export const audiences: Record<string, AudiencePage> = {
         reasoning: "Filevine's project-based matter management and powerful document system handle the document intensity of corporate transactions well. M&A due diligence, contract review projects, and corporate governance matters all benefit from Filevine's organized workflow and document management. Its task system and team collaboration features work well for deal teams across multiple attorneys and paralegals.",
         pros: ["Excellent for high-document-volume transactions", "Strong team collaboration for deal teams", "Customizable workflows per matter type", "Good analytics for corporate matter tracking", "Task management for complex deal timelines"],
         cons: ["Custom pricing", "Known primarily for litigation, not corporate", "Less specialized for pure corporate practice"],
-        affiliateUrl: "https://www.filevine.com",
+        affiliateUrl: getAffiliateUrl("Filevine", "for-audience"),
       },
     ],
     keyFeatures: [

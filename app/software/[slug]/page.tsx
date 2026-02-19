@@ -191,9 +191,9 @@ export default async function SoftwarePage({ params }: Props) {
               {/* CTA */}
               <div className="shrink-0">
                 <a
-                  href={software.website}
+                  href={software.affiliateUrl || software.website}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer sponsored"
                   className="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors"
                 >
                   Visit {software.name}
@@ -475,12 +475,12 @@ export default async function SoftwarePage({ params }: Props) {
               Start your free trial and see if {software.name} is the right fit for your law firm.
             </p>
             <a
-              href={software.website}
+              href={software.affiliateUrl || software.website}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-base font-semibold text-brand-600 shadow-sm transition-all hover:bg-brand-50"
             >
-              Visit {software.name}
+              Try {software.name} Free
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>

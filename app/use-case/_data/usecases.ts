@@ -5,12 +5,15 @@ export interface PricingRow {
   notes: string;
 }
 
+import { getAffiliateUrl } from "@/lib/affiliateConfig";
+
 export interface Solution {
   name: string;
   tagline: string;
   bestFor: string;
   price: string;
   rating: string;
+  affiliateUrl: string;
 }
 
 export interface FeatureRow {
@@ -56,6 +59,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Hourly billing firms wanting max billable recovery",
         price: "$89–$179/user/mo",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
       {
         name: "Clio",
@@ -63,6 +67,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting integrations with 200+ tools",
         price: "$39–$129/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "TimeSolv",
@@ -70,6 +75,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms focused purely on time and billing",
         price: "$29.95–$34.95/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("TimeSolv", "use-case"),
       },
       {
         name: "MyCase",
@@ -77,6 +83,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Client-focused firms wanting all-in-one",
         price: "$39–$79/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -84,6 +91,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Automation-driven practices",
         price: "$49–$89/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "Smokeball", "Clio", "TimeSolv", "MyCase", "PracticePanther"],
@@ -161,6 +169,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Full-service firms wanting one platform",
         price: "$39–$129/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "TimeSolv",
@@ -168,6 +177,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Billing-focused firms wanting the lowest cost",
         price: "$29.95–$34.95/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("TimeSolv", "use-case"),
       },
       {
         name: "MyCase",
@@ -175,6 +185,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms prioritizing fast client payments",
         price: "$39–$79/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -182,6 +193,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Automation-driven practices",
         price: "$49–$89/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
       {
         name: "Bill4Time",
@@ -189,6 +201,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Small to mid-size firms focused on billing",
         price: "$27–$80/user/mo",
         rating: "4.3/5",
+        affiliateUrl: getAffiliateUrl("Bill4Time", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "Clio", "TimeSolv", "MyCase", "PracticePanther", "Bill4Time"],
@@ -264,6 +277,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting a separate CRM with deep Clio integration",
         price: "$49/user/mo (add-on) or bundled in Complete at $129",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "Lawmatics",
@@ -271,6 +285,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Marketing-focused firms wanting the most powerful intake",
         price: "$99–$149/user/mo",
         rating: "4.8/5",
+        affiliateUrl: getAffiliateUrl("Lawmatics", "use-case"),
       },
       {
         name: "MyCase",
@@ -278,6 +293,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting intake + case management in one",
         price: "$79/user/mo (Advanced)",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -285,6 +301,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Automation-first practices",
         price: "$49–$89/user/mo",
         rating: "4.3/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
       {
         name: "Smokeball",
@@ -292,6 +309,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting intake that flows directly into matters",
         price: "$179/user/mo (Grow tier)",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "Clio Grow", "Lawmatics", "MyCase", "PracticePanther", "Smokeball"],
@@ -367,6 +385,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Mid-to-large firms needing enterprise-grade DMS",
         price: "$55–$99/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("NetDocuments", "use-case"),
       },
       {
         name: "Smokeball",
@@ -374,6 +393,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting built-in forms and auto-filing",
         price: "$89–$179/user/mo",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
       {
         name: "Clio",
@@ -381,6 +401,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting all-in-one with solid doc management",
         price: "$39–$129/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "iManage",
@@ -388,6 +409,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "BigLaw and large regional firms",
         price: "Custom pricing",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("iManage", "use-case"),
       },
       {
         name: "MyCase",
@@ -395,6 +417,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Smaller firms wanting simplicity + client access",
         price: "$39–$79/user/mo",
         rating: "4.3/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "NetDocuments", "Smokeball", "Clio", "iManage", "MyCase"],
@@ -470,6 +493,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "All firm sizes wanting integrated trust + billing",
         price: "$79–$129/user/mo (Essentials+)",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "MyCase",
@@ -477,6 +501,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Client-focused firms wanting simple compliance",
         price: "$39–$79/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "CosmoLex",
@@ -484,6 +509,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting to eliminate separate accounting software",
         price: "$99/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("CosmoLex", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -491,6 +517,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Automation-focused practices",
         price: "$49–$89/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
       {
         name: "Smokeball",
@@ -498,6 +525,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting trust + maximum billable recovery",
         price: "$89–$179/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "Clio", "MyCase", "CosmoLex", "PracticePanther", "Smokeball"],
@@ -572,6 +600,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Client communication-focused practices",
         price: "$39–$79/user/mo",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "Clio",
@@ -579,6 +608,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms in the Clio ecosystem",
         price: "$39–$129/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -586,6 +616,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Automation-focused firms wanting branded experience",
         price: "$49–$89/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
       {
         name: "Smokeball",
@@ -593,6 +624,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting portal linked to automatic time tracking",
         price: "$89–$179/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
       {
         name: "Lawmatics",
@@ -600,6 +632,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Marketing-forward firms tracking full client journey",
         price: "$99–$149/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Lawmatics", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "MyCase", "Clio", "PracticePanther", "Smokeball", "Lawmatics"],
@@ -675,6 +708,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "All firm sizes wanting the most established platform",
         price: "$39–$129/user/mo",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "MyCase",
@@ -682,6 +716,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Client-focused firms wanting integrated communication",
         price: "$39–$79/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -689,6 +724,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting to automate repetitive tasks",
         price: "$49–$89/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
       {
         name: "Smokeball",
@@ -696,6 +732,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Hourly billing firms focused on maximizing revenue",
         price: "$89–$179/user/mo",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
       {
         name: "Filevine",
@@ -703,6 +740,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Plaintiff firms and litigation-heavy practices",
         price: "Custom pricing (~$60–$120/user/mo)",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Filevine", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "Clio", "MyCase", "PracticePanther", "Smokeball", "Filevine"],
@@ -779,6 +817,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "General litigation firms wanting integrated deadline tracking",
         price: "$39–$129/user/mo",
         rating: "4.6/5",
+        affiliateUrl: getAffiliateUrl("Clio", "use-case"),
       },
       {
         name: "MyCase",
@@ -786,6 +825,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Client-facing firms wanting calendar + portal in one",
         price: "$39–$79/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("MyCase", "use-case"),
       },
       {
         name: "CompuLaw",
@@ -793,6 +833,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Large litigation firms needing the highest accuracy",
         price: "Custom pricing",
         rating: "4.7/5",
+        affiliateUrl: getAffiliateUrl("CompuLaw", "use-case"),
       },
       {
         name: "Smokeball",
@@ -800,6 +841,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Firms wanting deadlines linked to document automation",
         price: "$89–$179/user/mo",
         rating: "4.5/5",
+        affiliateUrl: getAffiliateUrl("Smokeball", "use-case"),
       },
       {
         name: "PracticePanther",
@@ -807,6 +849,7 @@ export const usecases: Record<string, UseCase> = {
         bestFor: "Automation-first firms wanting deadline-triggered tasks",
         price: "$49–$89/user/mo",
         rating: "4.4/5",
+        affiliateUrl: getAffiliateUrl("PracticePanther", "use-case"),
       },
     ],
     featureTableHeaders: ["Feature", "Clio", "MyCase", "CompuLaw", "Smokeball", "PracticePanther"],

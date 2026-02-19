@@ -338,12 +338,12 @@ export default async function ComparisonPage({ params }: Props) {
               Start your free trial and see if it&apos;s the right fit for your firm.
             </p>
             <a
-              href={`https://www.clio.com`}
+              href={platformA.affiliateUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-base font-medium text-brand-600 shadow-sm transition-all hover:bg-brand-50"
             >
-              Visit {platformA.name}
+              Try {platformA.name} Free
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
